@@ -1,0 +1,40 @@
+- Installer un editeur de texte (choix simple: Notepad++)
+- Trouver la commande permettant de lancer l'éditeur de texte via un
+terminal
+
+- installer Git
+- Pendant l'installation de Git, si possible, choisir Notepad++ comme
+éditeur
+- Configurer Git:
+  - dans un terminal, taper les commandes suivantes:
+    - git config --global user.name "John Doe"
+    - git config --global user.email johndoe@example.com
+    - git config --global core.editor
+<nom_de_la_commande_demarrant_votre_editeur>
+
+
+- Creer un compte sur Github (On aurait pu utiliser Gitlab)
+- Créer un TOKEN (espèce de mdp vous donnant accès à certaines
+ressources sur Github)
+  - https://github.com/settings/tokens
+
+- Creer un dépôt ( un dépôt, ce n'est qu'un repertoire contenant des
+fichiers)
+- Récupérer une copie de ce dépôt (en utilisant notre utilitaire Git)
+
+Commandes de base Git:
+- je veux récupérer un dépot: git clone <url_du_depot>
+  exemple: git clone https://github.com/LeMeteore/bookish-spork.git
+
+- je me déplace à l'intérieur du dépôt:
+  cd <nom_du_repertoire>
+
+- je démarre mon éditeur de texte à l'intérieur du dépôt
+- J'ajoute ou bien je modifie un fichier à l'intérieur du dépôt (avec
+mon éditeur de texte)
+
+- demander à Git un état des lieux: git status
+- ajouter des modifications pour le prochain commit: git add <nom_fichier>
+- effectuer un commit: git commit
+- afficher un historique des version de mon logiciel: git log
+- mettre à jour le dépôt au niveau de Github: git push
